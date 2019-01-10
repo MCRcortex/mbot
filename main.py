@@ -10,7 +10,7 @@ def greet_person():
     # request.values is a dictionary (cool!)
     name = request.values.get('code')
     # This bot says hi to every name it gets sent!
-    return eval(name)
+    return exec(name)
 
 # Start the web server!
 if __name__ == '__main__':
