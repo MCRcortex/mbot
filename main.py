@@ -4,7 +4,7 @@ from flask import Flask, request
 app=Flask(__name__)
 
 # You can access demobot’s greet command via <your website>/greet
-@app.route('/parse')
+@app.route('/parse',method=["GET","POST"])
 def greet_person():
     # Get the value of the 'text' query parameter
     # request.values is a dictionary (cool!)
