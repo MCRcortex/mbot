@@ -8,9 +8,9 @@ app=Flask(__name__)
 def greet_person():
     # Get the value of the 'text' query parameter
     # request.values is a dictionary (cool!)
-    name = request.values.get('code')
+    name = request.values.get('text')#request.values.get('code')
     # This bot says hi to every name it gets sent!
-    return exec(name)
+    return eval(name)
 
 # Start the web server!
 if __name__ == '__main__':
